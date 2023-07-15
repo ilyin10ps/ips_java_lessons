@@ -5,6 +5,7 @@ public class Sprint_01 {
         System.out.println("Спринт 01. Задания №2");
         System.out.println("Задача 01:"); numberEven();
         System.out.println("Задача 02:"); numberDouble();
+        System.out.println("Задача 03:");
     }
     public static void numberEven() {
         int n = 4;
