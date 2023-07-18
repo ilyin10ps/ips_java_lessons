@@ -10,7 +10,7 @@ public class Sprint_02 {
     }
     public static void arrayReverse() {
         int[] arr = new int[5];
-        System.out.println("\nМассив в оригинальном порядке: ");
+        System.out.println("Массив в оригинальном порядке: ");
         for (int i = 0; i < arr.length; i++) {
             arr[i] = (int) ((Math.random() * 100 - 1) + 1);
             System.out.print(arr[i] + " ");
