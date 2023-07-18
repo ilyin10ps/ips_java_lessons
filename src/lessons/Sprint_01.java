@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Sprint_01 {
     public static void main(String[] args) {
-        System.out.println("Спринт 01. Задания №2");
+        System.out.println("Спринт 01. ДЗ №2");
         System.out.println("Задача 01:"); numberEven();
         System.out.println("Задача 02:"); numberDouble();
         System.out.println("Задача 03:"); numberInterval();
@@ -18,6 +18,7 @@ public class Sprint_01 {
         System.out.println("Задача 11:"); numberPositiveDivisors();
         System.out.println("Задача 12:"); numberSimple();
     }
+
     public static void numberEven() {
         int n = 4;
         if (n%2 == 0) System.out.println("n - " + "четное число");
@@ -25,13 +26,19 @@ public class Sprint_01 {
     }
 
     public static void numberDouble() {
-        int m = 8, n = 11, a = 10;
-        int x = a - m;
-        int y = a - n;
-        if (x > y) {
-            System.out.println("Ближайшее число к " + a + ": " + n);
-        } else {
+        int n = 8;
+        int m = 11;
+        int a = 10;
+        int b = Math.abs(a - n);
+        int c = Math.abs(a - m);
+        if (b == c) {
+            System.out.println("Числа " + n + " и " + m + " на одинаковом расстоянии от " + a);
+        }
+        if(b > c) {
             System.out.println("Ближайшее число к " + a + ": " + m);
+        }
+        if (b < c) {
+            System.out.println("Ближайшее число к " + a + ": " + n);
         }
     }
 
@@ -52,12 +59,12 @@ public class Sprint_01 {
         int min = 100;
         int max = 999;
         int n = (int) (Math.random() * ((max - min) + 1) + min);
-        int a = n % 10;
+        int a = n/100;
         int b = (n/10) % 10;
-        int c = (n/100) % 10;
-        if (a > b && a > c) {
+        int c = n % 10;
+        if (a >= b && a >= c) {
             System.out.println(a);
-        } else if (b > 1 && 2 > 3) {
+        } else if (b >= a && b >= c) {
             System.out.println(b);
         } else {
             System.out.println(c);
@@ -71,7 +78,7 @@ public class Sprint_01 {
             System.out.println(a + ", " + b + ", " + c);
         } else if (b < a && b < c && a < c) {
             System.out.println(b + ", " + a + ", " + c);
-        } else if (c < a && c < b && a < b) {
+        } else if (c < a && c < b && a > b) {
             System.out.println(c + ", " + a + ", " + b);
         }
     }
@@ -106,10 +113,10 @@ public class Sprint_01 {
     }
 
     public static void numberFactorial() {
-        int n, x = 1;
+        int x = 1;
         Scanner scn = new Scanner(System.in);
         System.out.print("Введите натуральное число: ");
-        n = scn.nextInt();
+        int n = scn.nextInt();
         for(int i = 1; i > 0; i--) {
             x *= i;
         }
@@ -117,13 +124,12 @@ public class Sprint_01 {
     }
 
     public static void numberPositiveDivisors() {
-        int n, x, i;
         Scanner scn = new Scanner(System.in);
         System.out.print("Введите натуральное число: ");
-        n = scn.nextInt();
+        int n = scn.nextInt();
         System.out.print("Делителями числа " + n + " являются: ");
-        for (i = n; i > 0; i--) {
-            x = n % i;
+        for (int i = n; i > 0; i--) {
+            int x = n % i;
             if  (x == 0)
                 System.out.print( i + " ");
         }
