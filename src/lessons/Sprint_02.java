@@ -1,7 +1,4 @@
 package lessons;
-import java.util.Collections;
-import java.util.*;
-import java.util.Arrays;
 
 public class Sprint_02 {
     public static void main(String[] args) {
