@@ -45,7 +45,6 @@ public class Sprint_01 {
     public static void numberInterval() {
         int min = 5;
         int max = 155;
-//        int n = (int) (Math.random() * ((max - min) + 1) + min);
         int n = new Random().nextInt(151) + 5;
         if (n > 25 && n < 100) {
             System.out.println("Случайно выбранное из [5;155] число '" + n + "' попало в интервал (25;100)");

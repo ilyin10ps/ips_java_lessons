@@ -1,6 +1,6 @@
 package lessons;
 
-public class Sprint_02_dz3 {
+public class Sprint_02_dz03 {
     public static void main(String[] args) {
         System.out.println("Спринт 02. ДЗ №3");
         System.out.println("Задача 01:"); arrayReverse();
