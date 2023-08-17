@@ -1,4 +1,4 @@
-package lessons;
+package lessons.sprint_01;
 import java.util.Random;
 import java.util.Scanner;
 

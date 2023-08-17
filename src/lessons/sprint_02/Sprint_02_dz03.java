@@ -1,4 +1,4 @@
-package lessons;
+package lessons.sprint_02;
 
 public class Sprint_02_dz03 {
     public static void main(String[] args) {
