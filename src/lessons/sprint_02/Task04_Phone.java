@@ -1,7 +1,7 @@
 package lessons.sprint_02;
 
 class Task04_Phone {
-    static String number;
+    String number;
     String model;
     int weight;
 
